@@ -1,10 +1,3 @@
-
-/**
- * Module exports.
- */
-
-module.exports = deprecate;
-
 /**
  * Mark that a method should not be used.
  * Returns a modified function which warns once by default.
@@ -23,7 +16,7 @@ module.exports = deprecate;
  * @api public
  */
 
-function deprecate (fn, msg) {
+export function deprecate (fn, msg) {
   if (config('noDeprecation')) {
     return fn;
   }
@@ -65,3 +58,5 @@ function config (name) {
   if (null == val) return false;
   return String(val).toLowerCase() === 'true';
 }
+
+export default deprecate
