@@ -1,5 +1,5 @@
 {
-  "name": "@guld/util-deprecate",
+  "name": "iso-util-deprecate",
   "version": "1.0.2",
   "description": "The Node.js `util.deprecate()` function with browser support",
   "main": "node.js",
